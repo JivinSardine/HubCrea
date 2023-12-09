@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Player</title> 
+
+<style>
+  iframe {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+  
+  button {
+     position: fixed;
+     top: 10px;
+     left: 10px;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <button onclick="goBack()">Back</button>
+
+
+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"  
+          width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media">
+  </iframe>
+
+  <script>
+    function goBack() {
+      window.history.back(); 
+    }
+  </script>
+
+</body>
+</html>
